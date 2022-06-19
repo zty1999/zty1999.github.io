@@ -2,7 +2,7 @@ import { defineConfig } from 'vuepress/config';
 
 export default defineConfig({
   title: 'Spark的个人博客',
-  shouldPrefetch: () => false,
+  // shouldPrefetch: () => false,
   description: "Spark's blog",
   /**
    * Type is `DefaultThemeConfig`
@@ -18,9 +18,9 @@ export default defineConfig({
     ]
   }, */
   // 注入到当前页面的 HTML <head> 中的标签
-  head: [
+  // head: [
     //   ['link', { rel: 'icon', href: '' }],  //浏览器的标签栏的网页图标  /avatar.gif
-  ],
+  // ],
   markdown: {
     lineNumbers: true
   },
@@ -28,7 +28,7 @@ export default defineConfig({
   themeConfig: {
     // 请参考文档来查看所有可用的选项。
     // 假如文档不是放在仓库的根目录下：
-    docsDir: 'docs',
+    // docsDir: 'docs',
     nav: [
       { text: '首页', link: '/' },
       {
