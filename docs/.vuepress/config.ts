@@ -28,7 +28,7 @@ export default defineConfig({
   themeConfig: {
     // 请参考文档来查看所有可用的选项。
     // 假如文档不是放在仓库的根目录下：
-    // docsDir: 'docs',
+    docsDir: 'docs',
     nav: [
       { text: '首页', link: '/' },
       {
