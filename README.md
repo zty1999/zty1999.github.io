@@ -1,3 +1,5 @@
+更新博客内容： git bash 运行 `bash deploy.sh` 命令
+
 热更新问题：
 
 package.json:
