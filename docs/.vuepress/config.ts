@@ -4,6 +4,7 @@ export default defineConfig({
   title: 'Spark的个人博客',
   // shouldPrefetch: () => false,
   description: "Spark's blog",
+  base: '/mulean-blog/',
   /**
    * Type is `DefaultThemeConfig`
    */
@@ -19,7 +20,7 @@ export default defineConfig({
   }, */
   // 注入到当前页面的 HTML <head> 中的标签
   // head: [
-    //   ['link', { rel: 'icon', href: '' }],  //浏览器的标签栏的网页图标  /avatar.gif
+  //   ['link', { rel: 'icon', href: '' }],  //浏览器的标签栏的网页图标  /avatar.gif
   // ],
   markdown: {
     lineNumbers: true
