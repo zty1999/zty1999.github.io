@@ -13,6 +13,11 @@ package.json:
 
 config 配置文件 不支持热更新
 
+## GIT
+
+fatal: refusing to merge unrelated histories
+解决：git pull origin master --allow-unrelated-histories
+
 blog/.vuepress/components: 该目录下的 Vue 组件会自动注册为全局组件。
 blog/.vuepress/styles：存储与样式相关的文件。
 blog/.vuepress/styles/index.styl：在 CSS 文件末尾生成的自动应用的全局样式文件，其优先级高于默认样式。
