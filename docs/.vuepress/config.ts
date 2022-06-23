@@ -4,7 +4,7 @@ export default defineConfig({
   title: 'Spark的个人博客',
   // shouldPrefetch: () => false,
   description: "Spark's blog",
-  base: '/mulean-blog/',
+  base: '/zty1999.github.io/',
   /**
    * Type is `DefaultThemeConfig`
    */
