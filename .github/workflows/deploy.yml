@@ -23,7 +23,7 @@ jobs:
     
       - name: build
         run: |
-          set -e
+          npm i
           npm run build
       # Runs a set of commands using the runners shell
       - name: deploy
