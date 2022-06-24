@@ -25,12 +25,21 @@ jobs:
         run: |
           npm i
           npm run build
-      # Runs a set of commands using the runners shell
-      - name: deploy
-        run: |
-          cd docs/.vuepress/dist
-          git init
-          git add -A
-          git commit -m 'deploy'
-          # 如果发布到 https://<USERNAME>.github.io
-          git push -f git@github.com:zty1999/zty1999.github.io.git master
+      # Runs a set of commands using the runners shell]
+      
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@3.6.2
+        with:
+          GITHUB_TOKEN: ${{ secrets.DEPLOY_TOKEN }}
+          BRANCH: master # The branch the action should deploy to.
+          FOLDER: docs/.vuepress/dist/
+          CLEAN: true
+          
+#       - name: deploy
+#         run: |
+#           cd docs/.vuepress/dist
+#           git init
+#           git add -A
+#           git commit -m 'deploy'
+#           # 如果发布到 https://<USERNAME>.github.io
+#           git push -f git@github.com:zty1999/zty1999.github.io.git master
